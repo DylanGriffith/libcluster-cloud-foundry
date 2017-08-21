@@ -17,7 +17,7 @@ defp deps do
 end
 ```
 
-You will also need to update your start command in `mix.exs` to set the correct name for your node. The following example is something that has worked for me:
+You will also need to update your start command in `manifest.yml` to set the correct name for your node. The following example is something that has worked for me:
 
 ```yaml
 ---
