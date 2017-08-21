@@ -19,8 +19,8 @@ end
 
 You will also need to update your start command in `mix.exs` to set the correct name for your node. The following example is something that has worked for me:
 
-```
----yaml
+```yaml
+---
 applications:
   - name: my-clustered-app
     instances: 4
