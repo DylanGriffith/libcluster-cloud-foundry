@@ -20,7 +20,7 @@ end
 You will also need to update your start command in `mix.exs` to set the correct name for your node. The following example is something that has worked for me:
 
 ```
----
+---yaml
 applications:
   - name: my-clustered-app
     instances: 4
@@ -58,7 +58,7 @@ $ cf allow-access my-clustered-app my-clustered-app --protocol tcp --port 9001
 
 You then want to update your `config/prod.exs` to use the strategy:
 
-```
+```elixir
 use Mix.Config
 
 config :libcluster,
